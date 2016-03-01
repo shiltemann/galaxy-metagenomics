@@ -8,7 +8,7 @@ MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
 ENV GALAXY_CONFIG_BRAND Galaxy Metagenomics
 
-# Install deepTools
+# Install metagenomic tools
 ADD metagenomics.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 
