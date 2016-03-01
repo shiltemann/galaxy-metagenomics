@@ -70,6 +70,21 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   #revisions:
 
+- name: vegan_diversity
+  owner: iuc
+  tool_panel_section_label: "Vegan"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: vegan_fisher_alpha
+  owner: iuc
+  tool_panel_section_label: "Vegan"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  
+- name: vegan_rarefaction
+  owner: iuc
+  tool_panel_section_label: "Vegan"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
 - name: suite_kraken_0_10_5
   owner: devteam
   tool_panel_section_label: "Similarity Search"
