@@ -68,7 +68,7 @@ tools:
   owner: iuc
   tool_panel_section_label: "Similarity Search"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
+  install_tool_dependencies: False
 
 - name: vegan_diversity
   owner: iuc
