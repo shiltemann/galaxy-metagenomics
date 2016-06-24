@@ -1,8 +1,8 @@
 # Galaxy - Metagenomics
 #
-# VERSION       16.01
+# VERSION       16.04
 
-FROM quay.io/bgruening/galaxy:16.01
+FROM quay.io/bgruening/galaxy:dev
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
