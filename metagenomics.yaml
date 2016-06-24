@@ -199,7 +199,7 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   #revisions:
 
- - name: mothur_toolsuite
+ - name: suite_mothur
    owner: iuc
    tool_panel_section_label: "Mothur"
    tool_shed_url: https://testtoolshed.g2.bx.psu.edu
