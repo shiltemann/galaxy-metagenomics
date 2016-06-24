@@ -12,10 +12,3 @@ ENV ENABLE_TTS_INSTALL True
 # Install deepTools
 ADD metagenomics.yaml $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
-
-# Install Phinch IE
-RUN wget https://github.com/shiltemann/phinch-galaxy-ie/archive/master.zip \
-    && unzip master.zip \
-    && mv phinch-galaxy-ie-master/GIE_deprecated_/phinch/ config/plugins/interactive_environments/ \
-    && rm master.zip phinch-galaxy-ie-master -rf
-
