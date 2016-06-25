@@ -79,7 +79,7 @@ tools:
   owner: iuc
   tool_panel_section_label: "Vegan"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-  
+
 - name: vegan_rarefaction
   owner: iuc
   tool_panel_section_label: "Vegan"
@@ -197,4 +197,10 @@ tools:
   owner: clustalomega
   tool_panel_section_label: "Sequence Clustering"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  #revisions:
+
+- name: suite_mothur
+  owner: iuc
+  tool_panel_section_label: "Mothur"
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   #revisions:
