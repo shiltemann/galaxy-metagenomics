@@ -173,18 +173,21 @@ tools:
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_repository_dependencies: False
   #revisions:
 
 - name: tabular_to_fasta
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_repository_dependencies: False
   #revisions:
 
 - name: find_subsequences
   owner: bgruening
   tool_panel_section_label: "FASTA Tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_repository_dependencies: False
   #revisions:
 
 - name: commet
@@ -203,4 +206,5 @@ tools:
   owner: iuc
   tool_panel_section_label: "Mothur"
   tool_shed_url: https://testtoolshed.g2.bx.psu.edu
+  install_repository_dependencies: False
   #revisions:
