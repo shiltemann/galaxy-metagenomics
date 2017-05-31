@@ -155,3 +155,6 @@ tools:
 - name: suite_qiime
   owner: iuc
   tool_panel_section_label: "Qiime"
+
+- name: data_manager_qiime_database_downloader
+  owner: iuc
