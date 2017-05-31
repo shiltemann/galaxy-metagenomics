@@ -1,5 +1,6 @@
 [![DOI](https://zenodo.org/badge/5466/bgruening/docker-galaxy-stable.svg)](https://zenodo.org/badge/latestdoi/5466/bgruening/docker-galaxy-stable)
 [![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-metagenomics/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-metagenomics)
+[![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-metagenomics/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-metagenomics)
 
 Galaxy Workbench for Metagenomics
 =================================
