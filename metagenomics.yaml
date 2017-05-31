@@ -43,164 +43,118 @@ tools:
 - name: diamond
   owner: bgruening
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: blastxml_to_top_descr
   owner: peterjc
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: blast_rbh
   owner: peterjc
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: ncbi_blast_plus
   owner: devteam
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: vsearch
   owner: iuc
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: vegan_diversity
   owner: iuc
   tool_panel_section_label: "Vegan"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: vegan_fisher_alpha
   owner: iuc
   tool_panel_section_label: "Vegan"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: vegan_rarefaction
   owner: iuc
   tool_panel_section_label: "Vegan"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: suite_kraken_0_10_5
   owner: devteam
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: cd_hit_dup
   owner: devteam
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: gi2taxonomy
   owner: devteam
   tool_panel_section_label: "Similarity Search"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: clustalw
   owner: devteam
   tool_panel_section_label: "Sequence Clustering"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: fasta_compute_length
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: emboss_5
   owner: devteam
   tool_panel_section_label: "EMBOSS"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: fasta_merge_files_and_filter_unique_sequences
   owner: galaxyp
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: seq_filter_by_id
   owner: peterjc
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: seq_rename
   owner: peterjc
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: seq_select_by_id
   owner: peterjc
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: get_orfs_or_cdss
   owner: peterjc
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: get_orfs_or_cdss
   owner: peterjc
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: fasta_formatter
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: fasta_nucleotide_changer
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: fasta_to_tabular
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: tabular_to_fasta
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: find_subsequences
   owner: bgruening
   tool_panel_section_label: "FASTA Tools"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: commet
   owner: cmonjeau
   tool_panel_section_label: "Sequence Clustering"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: clustalomega
   owner: clustalomega
   tool_panel_section_label: "Sequence Clustering"
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  #revisions:
 
 - name: suite_mothur
   owner: iuc
   tool_panel_section_label: "Mothur"
-  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
-  #revisions:
+
+- name: suite_qiime
+  owner: iuc
+  tool_panel_section_label: "Qiime"
+
+- name: data_manager_qiime_database_downloader
+  owner: iuc
