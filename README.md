@@ -1,12 +1,12 @@
 [![DOI](https://zenodo.org/badge/5466/bgruening/docker-galaxy-stable.svg)](https://zenodo.org/badge/latestdoi/5466/bgruening/docker-galaxy-stable)
-[![Build Status](https://travis-ci.org/bgruening/galaxy-metagenomics.svg?branch=master)](https://travis-ci.org/bgruening/galaxy-metagenomics)
-[![Docker Repository on Quay](https://quay.io/repository/bgruening/galaxy-metagenomics/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/galaxy-metagenomics)
+[![Build Status](https://travis-ci.org/shiltemann/galaxy-metagenomics.svg?branch=master)](https://travis-ci.org/shiltemann/galaxy-metagenomics)
+[![Docker Repository on Quay](https://quay.io/repository/shiltemann/galaxy-metagenomics/status "Docker Repository on Quay")](https://quay.io/repository/shiltemann/galaxy-metagenomics)
 [![Gitter](https://badges.gitter.im/bgruening/docker-galaxy-stable.svg)](https://gitter.im/bgruening/docker-galaxy-stable?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 Galaxy Workbench for Metagenomics
 =================================
 
-:whale: Galaxy Docker repository for metagenomics (Galaxy metagenomics flavour) 
+:whale: Galaxy Docker repository for metagenomics (Galaxy metagenomics flavour)
 
 Usage
 =====
@@ -15,21 +15,21 @@ At first you need to install docker. Please follow the instruction on https://do
 
 After the successful installation, all what you need to do is:
 
-``docker run -d -p 8080:80 bgruening/galaxy-metagenomics``
+``docker run -d -p 8080:80 quay.io/shiltemann/galaxy-metagenomics``
 
 I will shortly explain the meaning of all the parameters. For a more detailed description please consult
 the [docker manual](http://docs.docker.io/), it's really worth reading.
 
-Let's start: ``docker run`` will run the Image/Container for you. 
-In case you do not have the Container stored locally, docker will download it for you. ``-p 8080:80`` 
-will make the port 80 (inside of the container) available on port 8080 on your host. 
-Inside the container a Apache Webserver is running on port 80 and that port can be bound to a 
-local port on your host computer. With this parameter you can access your Galaxy instance via ``http://localhost:8080`` 
-immediately after executing the command above. ``bgruening/galaxy-metagenomics`` is the Image/Container name, 
-that directs docker to the correct path in the [docker index](https://index.docker.io/u/bgruening/galaxy-metagenomics/). ``-d`` 
+Let's start: ``docker run`` will run the Image/Container for you.
+In case you do not have the Container stored locally, docker will download it for you. ``-p 8080:80``
+will make the port 80 (inside of the container) available on port 8080 on your host.
+Inside the container a Apache Webserver is running on port 80 and that port can be bound to a
+local port on your host computer. With this parameter you can access your Galaxy instance via ``http://localhost:8080``
+immediately after executing the command above. ``shiltemann/galaxy-metagenomics`` is the Image/Container name,
+that directs docker to the correct path in the [quay.io docker index](https://quay.io/repository/shiltemann/galaxy-metagenomics). ``-d``
 will start the docker container in daemon mode. For an interactive session, you can execute:
 
-``docker run -i -t -p 8080:80 bgruening/galaxy-metagenomics``
+``docker run -i -t -p 8080:80 quay.io/shiltemann/galaxy-metagenomics``
 
 and run the ``` startup ``` script by your own, to start PostgreSQL, Apache and Galaxy.
 
@@ -37,7 +37,7 @@ Docker images are "read-only", all your changes inside one session will be lost 
 
 Fortunately, this is as easy as:
 
-``docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ bgruening/galaxy-metagenomics``
+``docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ quay.io/shiltemann/galaxy-metagenomics``
 
 With the additional ``-v /home/user/galaxy_storage/:/export/`` parameter, docker will mount the folder ``/home/user/galaxy_storage`` into the Container under ``/export/``. A ``startup.sh`` script, that is usually starting Apache, PostgreSQL and Galaxy, will recognize the export directory with one of the following outcomes:
 
@@ -53,17 +53,17 @@ Enabling Interactive Environments in Galaxy
 Interactive Environments (IE) are sophisticated ways to extend Galaxy with powerful services, like IPython, in a secure and reproducible way.
 For this we need to be able to launch Docker containers inside our Galaxy Docker container. At least docker 1.3 is needed on the host system.
 
-``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -v /home/user/galaxy_storage/:/export/ bgruening/galaxy-metagenomics``
+``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -v /home/user/galaxy_storage/:/export/ quay.io/shiltemann/galaxy-metagenomics``
 
 The port 8800 is the proxy port that is used to handle Interactive Environments. ``--privileged`` is needed to start docker containers inside docker.
 
 Using Parent docker
 -------------------
 On some linux distributions, Docker-In-Docker can run into issues (such as running out of loopback interfaces). If this is an issue,
-you can use a 'legacy' mode that use a docker socket for the parent docker installation mounted inside the container. To engage, set the 
+you can use a 'legacy' mode that use a docker socket for the parent docker installation mounted inside the container. To engage, set the
 environmental variable DOCKER_PARENT
 
-``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -e DOCKER_PARENT=True -v /var/run/docker.sock:/var/run/docker.sock -v /home/user/galaxy_storage/:/export/ bgruening/galaxy-metagenomics``
+``docker run -d -p 8080:80 -p 8021:21 -p 8800:8800 --privileged=true -e DOCKER_PARENT=True -v /var/run/docker.sock:/var/run/docker.sock -v /home/user/galaxy_storage/:/export/ quay.io/shiltemann/galaxy-metagenomics``
 
 
 
@@ -96,7 +96,7 @@ History
 Support & Bug Reports
 =====================
 
-For support, questions, or feature requests please see https://github.com/bgruening/galaxy-metagenomics/issues.
+For support, questions, or feature requests please see https://github.com/shiltemann/galaxy-metagenomics/issues.
 
 
 
